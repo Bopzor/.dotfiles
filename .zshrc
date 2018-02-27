@@ -100,9 +100,9 @@ export LC_ALL=en_US.UTF-8
 
 
 #KEY PUUSH NILS
-export PUUSH_API_KEY="27879EBA9D0C506EC441834A3895F137"
+source ~/.zshrc.local
 
-# Aliases
+#Aliases
 
 alias kill4269⁼'kill -9 $(lsof -i tcp | grep 4269 | sed -r "s/[^0-9]*([0-9]+).*/\1/")'
 alias ls="ls --color=auto"
