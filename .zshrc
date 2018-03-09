@@ -103,9 +103,5 @@ export LC_ALL=en_US.UTF-8
 source ~/.zshrc.local
 
 #Aliases
+source ~/.confiles/.zshrc-aliases 
 
-alias kill4269⁼'kill -9 $(lsof -i tcp | grep 4269 | sed -r "s/[^0-9]*([0-9]+).*/\1/")'
-alias ls="ls --color=auto"
-alias mount-twix="sshfs 37.187.126.3:/data/media /home/vio/media"
-alias umount-twix="fusermount -u /home/vio/media"
-alias s="sudo"
