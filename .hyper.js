@@ -135,7 +135,6 @@ module.exports = {
     'hyperterm-tabs',
     'hyperlinks',
     'hyper-snazzy',
-    'hyper-transparent-dynamic',
     'hyper-spotify',
     'hyper-seashells',
     'hyperterm-cursor',
