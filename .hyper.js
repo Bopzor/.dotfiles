@@ -21,7 +21,7 @@ module.exports = {
     cursorShape: 'BLOCK',
 
     // set to true for blinking cursor
-    cursorBlink: false,
+    cursorBlink: true,
 
     // color of the text
     foregroundColor: '#fff',
@@ -94,7 +94,7 @@ module.exports = {
     env: {},
 
     // set to false for no bell
-    bell: 'SOUND',
+    bell: false,
 
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: false,
@@ -137,8 +137,8 @@ module.exports = {
     'hyper-snazzy',
     'hyper-transparent-dynamic',
     'hyper-spotify',
-    'hyperpower',
     'hyper-seashells',
+    'hyperterm-cursor',
   ],
 
   // in development, you can create a directory under
