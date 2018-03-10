@@ -8,6 +8,5 @@ alias paci="\pacman -S"
 alias pacs="\pacman -Ss"
 alias pacu="\pacman -Syu"
 alias pacrm="\pacman -R"
-alias pacman="echo 'Use the alias'"
 
 
