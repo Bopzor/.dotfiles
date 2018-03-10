@@ -4,9 +4,9 @@ alias ls="ls --color=auto"
 alias mount-twix="sshfs 37.187.126.3:/data/media /home/vio/media"
 alias umount-twix="fusermount -u /home/vio/media"
 alias s="sudo"
-alias paci="\pacman -S"
-alias pacs="\pacman -Ss"
-alias pacu="\pacman -Syu"
-alias pacrm="\pacman -R"
+alias paci="pacman -S"
+alias pacs="pacman -Ss"
+alias pacu="sudo pacman -Syu"
+alias pacrm="pacman -R"
 
 
