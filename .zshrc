@@ -97,9 +97,10 @@ compinit
 
 
 export LC_ALL=en_US.UTF-8
-
+export PAGER=most
 
 #KEY PUUSH NILS
+
 source ~/.zshrc.local
 
 #Aliases
