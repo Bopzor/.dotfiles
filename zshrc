@@ -104,5 +104,5 @@ export PAGER=most
 source ~/.zshrc.local
 
 #Aliases
-source ~/.confiles/.zshrc-aliases 
+source ~/.confiles/zshrc.aliases 
 

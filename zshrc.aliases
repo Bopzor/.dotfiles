@@ -9,4 +9,3 @@ alias pacs="pacman -Ss"
 alias pacu="sudo pacman -Syu"
 alias pacrm="sudo pacman -R"
 
-
