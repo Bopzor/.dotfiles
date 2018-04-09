@@ -87,9 +87,7 @@ source $ZSH/oh-my-zsh.sh
 #Prompt
 autoload -U promptinit
 promptinit
-prompt fade
 
-#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\u@\[\033[01;32m\]\h\[\033[00;37m\]:\[\033[00;36m\]\w\[\033[00m\]\$ '
 
 #Completion
 autoload -U compinit
@@ -106,3 +104,4 @@ source ~/.zshrc.local
 #Aliases
 source ~/.confiles/zshrc.aliases
 
+source /home/vio/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
