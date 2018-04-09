@@ -106,3 +106,4 @@ source ~/.zshrc.local
 #Aliases
 source ~/.confiles/zshrc.aliases 
 
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
