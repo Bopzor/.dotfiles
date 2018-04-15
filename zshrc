@@ -106,3 +106,6 @@ source ~/.zshrc.local
 #Aliases
 source ~/.confiles/zshrc.aliases 
 
+#Zshrc options
+setopt auto_cd
+setopt chase_links
