@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
- ZSH_THEME="gallois"
+ ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,9 +87,7 @@ source $ZSH/oh-my-zsh.sh
 #Prompt
 autoload -U promptinit
 promptinit
-prompt fade
 
-#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\u@\[\033[01;32m\]\h\[\033[00;37m\]:\[\033[00;36m\]\w\[\033[00m\]\$ '
 
 #Completion
 autoload -U compinit
@@ -104,8 +102,11 @@ export PAGER=most
 source ~/.zshrc.local
 
 #Aliases
-source ~/.confiles/zshrc.aliases 
+source ~/.confiles/zshrc.aliases
 
 #Zshrc options
 setopt auto_cd
 setopt chase_links
+
+source /home/vio/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
