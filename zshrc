@@ -108,5 +108,5 @@ source ~/.confiles/zshrc.aliases
 setopt auto_cd
 setopt chase_links
 
-source /home/vio/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/vio/.confiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
