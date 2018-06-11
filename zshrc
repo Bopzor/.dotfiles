@@ -110,3 +110,17 @@ setopt chase_links
 
 source /home/vio/.confiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+#Functions
+
+pass() {
+  password=$(lpass show "$2")
+
+  if [ -z $? ]; then
+    return 1
+  fi
+
+  echo -n $(echo "$password" | grep '^[Pp]assword:' | sed 's/[^:]\+: //') | xclip -sel clipboard
+}
+
+compdef pass=lpass
+

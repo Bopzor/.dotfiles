@@ -2,9 +2,12 @@
 	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Tomorrow.tmTheme",
 	"font_face": "Source Code Pro",
 	"font_size": 11,
+	"highlight_trailing_whitespace": true,
+	"highlight_trailing_whitespace_non_cursor": false,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"theme": "Adaptive.sublime-theme"
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true
 }
