@@ -1,12 +1,23 @@
-#Aliases
-alias kill4269='kill -9 $(lsof -i tcp | grep 4269 | sed -r "s/[^0-9]*([0-9]+).*/\1/")' 
+#Aliases 
 alias ls="ls --color=auto" 
+
 alias mount-twix="sshfs 37.187.126.3:/data/media /home/vio/media"
 alias umount-twix="fusermount -u /home/vio/media"
+
 alias sub-fr="subliminal download -l fr"
+
 alias s="sudo"
+
 alias paci="sudo pacman -S"
 alias pacs="pacman -Ss"
 alias pacu="sudo pacman -Syu"
 alias pacrm="sudo pacman -R"
+
 alias nvmi="source ~/.nvm/nvm.sh"
+
+alias sys="sudo systemctl"
+alias sysu="systemctl --user"
+
+alias status="sys status"
+alias start="sys start"
+alias stop="sys stop"
