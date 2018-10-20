@@ -1,5 +1,5 @@
-#Aliases 
-alias ls="ls --color=auto" 
+#Aliases
+alias ls="ls --color=auto"
 
 alias mount-twix="sshfs 37.187.126.3:/data/media /home/vio/media"
 alias umount-twix="fusermount -u /home/vio/media"
@@ -21,3 +21,5 @@ alias sysu="systemctl --user"
 alias status="sys status"
 alias start="sys start"
 alias stop="sys stop"
+
+alias g="git"
