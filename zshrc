@@ -51,7 +51,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -119,8 +119,11 @@ pass() {
     return 1
   fi
 
-  echo -n $(echo "$password" | grep '^[Pp]assword:' | sed 's/[^:]\+: //') | xclip -sel clipboard
+  echo -n $(echo "$password" | grep '^[Pp]assword:' | head -1 | sed 's/[^:]\+: //') |
+xclip -sel clipboard
 }
 
 compdef pass=lpass
 
+export PATH="$PATH:$HOME/.nvm/versions/node/v8.11.2/bin"
+export PATH="$PATH:$HOME/.bin"
