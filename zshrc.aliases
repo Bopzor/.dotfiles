@@ -13,6 +13,9 @@ alias pacs="pacman -Ss"
 alias pacu="sudo pacman -Syu"
 alias pacrm="sudo pacman -R"
 
+alias yaourti="yaourt -S --noconfirm"
+alias yaourts="yaourt -Ss"
+
 alias nvmi="source ~/.nvm/nvm.sh"
 
 alias sys="sudo systemctl"
