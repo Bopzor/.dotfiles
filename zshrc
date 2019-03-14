@@ -99,7 +99,7 @@ export PAGER=most
 
 #KEY PUUSH NILS
 
-source ~/.zshrc.local
+# source ~/.zshrc.local
 
 #Aliases
 source ~/.confiles/zshrc.aliases
