@@ -26,3 +26,9 @@ alias start="sys start"
 alias stop="sys stop"
 
 alias g="git"
+
+alias -g HL='| highlight'
+
+alias h='http --session=/tmp/http-session'
+
+alias pgip='docker inspect postgres | jq -r ".[0].NetworkSettings.Networks.bridge.IPAddress"'

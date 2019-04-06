@@ -127,3 +127,11 @@ compdef pass=lpass
 
 export PATH="$PATH:$HOME/.nvm/versions/node/v8.11.2/bin"
 export PATH="$PATH:$HOME/.bin"
+
+export PATH=$PATH:/opt/gradle/gradle-5.3/bin
+export JAVA_HOME=/usr/lib/jvm/java-8-jdk/
+export ANDROID_HOME=/home/vio/Android/Sdk
+export PATH=${PATH}:/home/vio/Android/Sdk/platform-tools:/home/vio/Android/Sdk/tools
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
