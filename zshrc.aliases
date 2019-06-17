@@ -28,7 +28,10 @@ alias stop="sys stop"
 alias g="git"
 
 alias -g HL='| highlight'
+alias -g c='| xclip -selection clipboard'
 
 alias h='http --session=/tmp/http-session'
 
 alias pgip='docker inspect postgres | jq -r ".[0].NetworkSettings.Networks.bridge.IPAddress"'
+
+alias gd='google-drive-ocamlfuse'

@@ -108,7 +108,7 @@ source ~/.confiles/zshrc.aliases
 setopt auto_cd
 setopt chase_links
 
-source /home/vio/.confiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/vio/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #Functions
 
@@ -135,3 +135,9 @@ export PATH=${PATH}:/home/vio/Android/Sdk/platform-tools:/home/vio/Android/Sdk/t
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
+#FOR DART
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+#FOR DOTNET
+export MSBuildSDKsPath="/opt/dotnet/sdk/2.2.105/Sdks"
