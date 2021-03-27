@@ -1,0 +1,15 @@
+{
+  "Widget View": {
+    "scope": "dart",
+    "prefix": "widview",
+    "body": [
+      "class ${1}View extends WidgetView<${2}, $3>{",
+      "  const ${1}View (${2} state, {Key key}) : super(state, key: key);",
+      "  Widget build(BuildContext build){",
+      "    return $$",
+      "  }",
+      "}",
+    ],
+    "description": "Create a flutter widget view"
+  }
+}

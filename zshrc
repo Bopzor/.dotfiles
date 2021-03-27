@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/vio/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_BASE=/home/vio/.fzf
+export FZF_BASE=~/.fzf
 
 ZSH_THEME="pmcgee"
 
@@ -70,30 +70,19 @@ unsetopt list_ambiguous         # show completion when is command ambiguous
 unsetopt menu_complete          # do not autoselect the first completion entry.
 unsetopt complete_aliases       # complete alisases
 
-#Functions
-
-##lastpass-cli
-#pass() {
-#  password=$(lpass show "$2")
-#
-#  if [ -z $? ]; then
-#    return 1
-#  fi
-#
-#  echo -n $(echo "$password" | grep '^[Pp]assword:' | head -1 | sed 's/[^:]\+: //') |
-#xclip -sel clipboard
-#}
-
-#compdef pass=lpass
-
 #KEY PUUSH
 #source ~/.zshrc.local
 
 #Aliases
-source ~/.confiles/zshrc.aliases.ubuntu
+source ~/.dotfiles/zshrc.aliases
+# source ~/.dotfiles/zshrc.aliases.archlinux
+source ~/.dotfiles/zshrc.aliases.ubuntu
+
+#Local
+source $HOME/.zshrc.local
 
 #EXPORTS
-export PATH="$PATH:$HOME/.nvm/versions/node/v8.11.2/bin"
+export PATH="$PATH:$HOME/.nvm/versions/node/v12.16.3/bin"
 export PATH="$PATH:$HOME/.bin"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -103,15 +92,18 @@ export PATH=$PATH:/opt/gradle/gradle-5.3/bin
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 # Maven
 export PATH=$PATH:$HOME/apache-maven-3.6.3/bin
+export PATH=$PATH:$JAVA_HOME/bin
 
 # android
-export ANDROID_SDK_ROOT=/home/vio/Android
-export ANDROID_HOME="$ANDROID_SDK_ROOT"
-export PATH=$PATH:/home/vio/Android/platform-tools
-export PATH=$PATH:/home/vio/Android/tools/bin
+export ANDROID_HOME=$HOME/Android
+export ANDROID_SDK_ROOT=$HOME/Android
+export PATH=$PATH:$HOME/Android/tools/bin
+
+# flutter
+export PATH=$PATH:$HOME/flutter/bin
+export PATH=$PATH:$HOME/flutter
 
 #NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-

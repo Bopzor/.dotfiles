@@ -1,0 +1,27 @@
+{
+  "Widget Controller View": {
+    "scope": "dart",
+    "prefix": "wcv",
+    "body": [
+      "class ${1} extends StatefulWidget {",
+      "  @override",
+      "  _${1}Controller createState() => _${1}Controller();",
+      "}",
+      "",
+      "class _${1}Controller extends State<${1}> {",
+      "  @override",
+      "  Widget build(BuildContext context) => _${1}View(this);",
+      "}",
+      "",
+      "class _${1}View extends WidgetView<${1}, _${1}Controller> {",
+      "  _${1}View(_${1}Controller state) : super(state);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return Container($2);",
+      "  }",
+      "}",
+    ],
+    "description": "Create a flutter widget view"
+  }
+}

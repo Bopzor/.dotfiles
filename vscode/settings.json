@@ -1,68 +1,113 @@
 {
-    "editor.fontFamily": "Fira mono",
-    "editor.tabSize": 2,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.snippetSuggestions": "top",
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 120,
-    "editor.tabCompletion": "on",
-    "editor.fontLigatures": true,
-
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        { "language": "html", "autoFix": true },
-        "typescript",
-        "typescriptreact"
-      ],
-
-    "files.trimFinalNewlines": true,
-
-    "terminal.external.linuxExec": "terminator",
-
-    "workbench.colorTheme": "Tomorrow Night",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
-
-    "breadcrumbs.enabled": true,
-
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-
-    "files.autoSave": "onWindowChange",
-    "files.trimTrailingWhitespace": true,
-
-    "window.restoreWindows": "folders",
-    "window.openFoldersInNewWindow": "on",
-
-    "prettier.singleQuote": true,
-    "prettier.printWidth": 100,
-    "prettier.trailingComma": "es5",
-    "prettier.jsxSingleQuote": false,
-    "prettier.disableLanguages": [
-        "vue",
-        "md",
-        "markdown"
-    ],
-
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#282e2f",
-    },
-
-    "prettier.arrowParens": "always",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "eslint.autoFixOnSave": true
+  "editor.tabSize": 2,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "bottom",
+  "editor.wordWrapColumn": 120,
+  "editor.tabCompletion": "on",
+  "editor.fontLigatures": true,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "files.simpleDialog.enable": true,
+  "files.trimFinalNewlines": true,
+  "terminal.external.linuxExec": "terminator",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "breadcrumbs.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSave": "off",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  },
+  "window.restoreWindows": "folders",
+  "window.openFoldersInNewWindow": "on",
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 100,
+  "prettier.trailingComma": "es5",
+  "prettier.jsxSingleQuote": false,
+  "prettier.disableLanguages": [
+    "vue",
+    "md",
+    "markdown"
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#282e2f",
+  },
+  "prettier.arrowParens": "always",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.fontSize": 11,
+  "editor.fontFamily": "'JetBrains Mono', 'Fira mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.scrollBeyondLastLine": false,
+  "files.insertFinalNewline": true,
+  "keyboard.dispatch": "keyCode",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "typescript",
+    "javascript",
+    "javascriptreact"
+  ],
+  "editor.detectIndentation": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "workbench.colorTheme": "Atom One Dark",
+  "explorer.autoReveal": false,
+  "java.semanticHighlighting.enabled": false,
+  "editor.suggest.insertMode": "replace",
+  "trailing-spaces.trimOnSave": true,
+  "trailing-spaces.syntaxIgnore": [
+    "markdown",
+    "md"
+  ],
+  "trailing-spaces.schemeIgnore": [
+    "md",
+    "markdown",
+    "output"
+  ],
+  "prettier.configPath": ".prettierc",
+  "liveshare.sharedTerminalHeight": 500,
+  "liveshare.sharedTerminalWidth": 500,
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  "vsintellicode.python.completionsEnabled": false,
+  "vsintellicode.sql.completionsEnabled": false,
+  "vsintellicode.java.completionsEnabled": false,
+  "vsintellicode.features.python.deepLearning": "enabled",
+  "dart.flutterSdkPath": "/home/vio/flutter",
+  "dart.debugExternalLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "autoimport.filesToScan": "**/*.{ts,tsx, js, jsx}",
+  "extensions.ignoreRecommendations": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "npm-intellisense.scanDevDependencies": true,
+  "wallaby.startAutomatically": false,
+  "liveshare.authenticationProvider": "GitHub"
 }

@@ -1,20 +1,11 @@
 #Aliases
+
 alias ls="ls --color=auto"
 
-alias mount-twix="sshfs 37.187.126.3:/data/media /home/vio/media"
-alias umount-twix="fusermount -u /home/vio/media"
-
+alias sub-en="subliminal download -l en"
 alias sub-fr="subliminal download -l fr"
 
 alias s="sudo"
-
-alias paci="sudo pacman -S"
-alias pacs="pacman -Ss"
-alias pacu="sudo pacman -Syu"
-alias pacrm="sudo pacman -R"
-
-alias yaourti="yaourt -S --noconfirm"
-alias yaourts="yaourt -Ss"
 
 alias nvmi="source ~/.nvm/nvm.sh"
 
@@ -25,8 +16,6 @@ alias status="sys status"
 alias start="sys start"
 alias stop="sys stop"
 
-alias g="git"
-
 alias -g HL='| highlight'
 alias -g c='| xclip -selection clipboard'
 
@@ -34,4 +23,11 @@ alias h='http --session=/tmp/http-session'
 
 alias pgip='docker inspect postgres | jq -r ".[0].NetworkSettings.Networks.bridge.IPAddress"'
 
-alias gd='google-drive-ocamlfuse'
+alias xrandr-work='xrandr --output DP-1 --auto --pos 0x0 --output eDP-1 --auto --pos 5120x360 && sh ~/.fehbg'
+alias xrandr-laptop='xrandr --output DP-1 --off --output DP-2 --off && sh ~/.fehbg'
+alias xrandr-mirror='xrandr --output DP-1 --auto --same-as eDP-1 --mode 1920x1080 && sh ~/.fehbg'
+alias xrandr-three='xrandr --output DP-1 --auto --pos 0x0 --output eDP-1 --auto --pos 5120x360 --output DP-2 --auto --pos 2560x360 && sh ~/.fehbg'
+
+alias g="git"
+alias y="yarn"
+alias dcp='docker-compose'

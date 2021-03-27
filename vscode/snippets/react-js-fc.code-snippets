@@ -1,0 +1,21 @@
+{
+  "React FC": {
+    "scope": "javascript, javascriptreact",
+    "prefix": "fc",
+    "body": [
+      "import React from 'react';",
+      "",
+
+      "const ${1:${TM_FILEPATH/.*\\/(.*)\\/index\\.jsx?$|.*\\/(.*)\\.jsx?$/$1$2/}} = ({ $2 }) => {",
+      "  return (",
+      "    <$3>",
+      "      $0",
+      "    </$3>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILEPATH/.*\\/(.*)\\/index\\.jsx?$|.*\\/(.*)\\.jsx?$/$1$2/}};"
+    ],
+    "description": "Create a react function component"
+  }
+}

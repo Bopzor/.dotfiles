@@ -1,50 +1,6 @@
 #Aliases
-alias ls="ls --color=auto"
-
-alias mount-twix="sshfs 37.187.126.3:/data/media /home/vio/media"
-alias umount-twix="fusermount -u /home/vio/media"
-
-alias sub-fr="subliminal download -l fr"
-
-alias s="sudo"
 
 alias apti="sudo apt-get install"
 alias apts="apt-cache search"
 alias aptu="sudo apt-get update"
 alias aptrm="sudo apt-get remove"
-
-alias nvmi="source ~/.nvm/nvm.sh"
-
-alias sys="sudo systemctl"
-alias sysu="systemctl --user"
-
-alias status="sys status"
-alias start="sys start"
-alias stop="sys stop"
-
-alias g="git"
-alias y="yarn"
-
-alias -g HL='| highlight'
-alias -g c='| xclip -selection clipboard'
-
-alias h='http --session=/tmp/http-session'
-
-alias pgip='docker inspect postgres | jq -r ".[0].NetworkSettings.Networks.bridge.IPAddress"'
-
-alias rubix='cd /home/vio/kpc/rubix/rubix-frontend && npm run start-dev'
-alias pBO='cd /home/vio/kpc/pellenc/backoffice && yarn start'
-alias trxAPI='cd /home/vio/kpc/traxens/api && yarn start'
-alias trxFront='cd /home/vio/kpc/traxens/frontend && HTTPS=true yarn start'
-
-alias xrandr-work='xrandr --output DP-1 --auto --pos 0x0 --output eDP-1 --auto --pos 5120x360 && sh ~/.fehbg'
-alias xrandr-laptop='xrandr --output DP-1 --off --output DP-2 --off && sh ~/.fehbg'
-alias xrandr-mirror='xrandr --output DP-1 --auto --same-as eDP-1 --mode 1920x1080 && sh ~/.fehbg'
-
-#LASTPASS
-alias lp='/home/vio/utils/lpass.sh'
-lps() { lp $1 | cat -n }
-lpc() { lp $1 | head -$2 | tail -1 | awk '{ print $4 }' }
-
-# SCRATCH
-alias scratch='/opt/adobe-air-sdk/adobe-air/adobe-air /opt/adobe-air-sdk/scratch/Scratch-456.0.1.air'
