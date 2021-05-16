@@ -1,14 +1,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export FZF_BASE=~/.fzf
 
 ZSH_THEME="pmcgee"
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-plugins=(zsh-syntax-highlighting dotenv fzf)
+source $ZSH/custom/plugins/zsh-syntax-highlighting.zsh
 
 ENABLE_CORRECTION="true"
 
@@ -38,11 +37,11 @@ else
   export EDITOR='subl'
 fi
 
-#Prompt
+# Prompt
 autoload -U promptinit
 promptinit
 
-#Completion
+# Completion
 autoload -U compinit
 compinit
 
@@ -55,7 +54,7 @@ setopt auto_list                # automatically list choices on ambiguous comple
 setopt list_packed              # pack columns
 unsetopt list_ambiguous         # show completion when is command ambiguous
 
-#Zshrc options
+# Zshrc options
 setopt auto_cd                  # if command is a path, cd into it
 setopt chase_links              # resolve symlinks
 setopt hist_ignore_space        # remove command lines from history if first character on the line is a space
@@ -70,25 +69,22 @@ unsetopt list_ambiguous         # show completion when is command ambiguous
 unsetopt menu_complete          # do not autoselect the first completion entry.
 unsetopt complete_aliases       # complete alisases
 
-#KEY PUUSH
-#source ~/.zshrc.local
+# Aliases
+source ~/.dotfiles/zshrc/zshrc.aliases
+source ~/.dotfiles/zshrc/zshrc.aliases.archlinux
+#source ~/.dotfiles/zshrc/zshrc.aliases.ubuntu
 
-#Aliases
-source ~/.dotfiles/zshrc.aliases
-# source ~/.dotfiles/zshrc.aliases.archlinux
-source ~/.dotfiles/zshrc.aliases.ubuntu
+# Local
+#source $HOME/.zshrc.local
 
-#Local
-source $HOME/.zshrc.local
-
-#EXPORTS
+# EXPORTS
 export PATH="$PATH:$HOME/.nvm/versions/node/v12.16.3/bin"
 export PATH="$PATH:$HOME/.bin"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export PATH=$PATH:/opt/gradle/gradle-5.3/bin
-# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 # Maven
 export PATH=$PATH:$HOME/apache-maven-3.6.3/bin
@@ -103,7 +99,11 @@ export PATH=$PATH:$HOME/Android/tools/bin
 export PATH=$PATH:$HOME/flutter/bin
 export PATH=$PATH:$HOME/flutter
 
-#NVM
+# NVM
+source /usr/share/nvm/init-nvm.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# ROFI
+export PATH=$HOME/.config/rofi/bin:$PATH

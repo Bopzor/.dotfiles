@@ -35,11 +35,6 @@
   "prettier.printWidth": 100,
   "prettier.trailingComma": "es5",
   "prettier.jsxSingleQuote": false,
-  "prettier.disableLanguages": [
-    "vue",
-    "md",
-    "markdown"
-  ],
   "workbench.colorCustomizations": {
     "statusBar.background": "#282e2f",
   },
@@ -77,7 +72,6 @@
   ],
   "editor.detectIndentation": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "workbench.colorTheme": "Atom One Dark",
   "explorer.autoReveal": false,
   "java.semanticHighlighting.enabled": false,
   "editor.suggest.insertMode": "replace",
@@ -94,7 +88,6 @@
   "prettier.configPath": ".prettierc",
   "liveshare.sharedTerminalHeight": 500,
   "liveshare.sharedTerminalWidth": 500,
-  "terminal.integrated.shell.linux": "/usr/bin/zsh",
   "vsintellicode.python.completionsEnabled": false,
   "vsintellicode.sql.completionsEnabled": false,
   "vsintellicode.java.completionsEnabled": false,
@@ -109,5 +102,10 @@
   "gitlens.codeLens.enabled": false,
   "npm-intellisense.scanDevDependencies": true,
   "wallaby.startAutomatically": false,
-  "liveshare.authenticationProvider": "GitHub"
+  "liveshare.authenticationProvider": "GitHub",
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.cursorStyle": "line",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorTheme": "Bear Theme",
+  "scm.defaultViewMode": "tree"
 }
