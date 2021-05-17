@@ -54,7 +54,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "editor.fontSize": 11,
-  "editor.fontFamily": "'JetBrains Mono', 'Fira mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'JetBrains Mono', 'Fira mono', 'monospace', monospace, 'Droid Sans Fallback' , 'FontAwesome'",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
