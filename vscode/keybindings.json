@@ -80,6 +80,20 @@
   { "key": "ctrl+'", "command": "editor.action.smartSelect.expand", "when": "editorTextFocus" },
   { "key": "ctrl+;", "command": "editor.action.smartSelect.shrink", "when": "editorTextFocus" },
 
+  { "key": "alt+q '", "command": "extension.selectSingleQuote" },
+  { "key": "alt+q shift+'", "command": "extension.selectDoubleQuote" },
+  { "key": "alt+q z", "command": "extension.selectEitherQuote" },
+  { "key": "alt+q q", "command": "extension.switchQuotes" },
+  { "key": "alt+q `", "command": "extension.selectBackTick" },
+  { "key": "alt+q (", "command": "extension.selectParenthesis" },
+  { "key": "alt+q )", "command": "extension.selectParenthesisOuter" },
+  { "key": "alt+q [", "command": "extension.selectSquareBrackets" },
+  { "key": "alt+q ]", "command": "extension.selectSquareBracketsOuter" },
+  { "key": "alt+q shift+[", "command": "extension.selectCurlyBrackets" },
+  { "key": "alt+q shift+]", "command": "extension.selectCurlyBracketsOuter" },
+  { "key": "alt+q <", "command": "extension.selectAngleBrackets" },
+  { "key": "alt+q .", "command": "extension.selectInTag" },
+
   // actions
   // -------
 
