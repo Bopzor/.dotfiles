@@ -85,6 +85,9 @@
     "markdown",
     "output"
   ],
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
   "prettier.configPath": ".prettierc",
   "liveshare.sharedTerminalHeight": 500,
   "liveshare.sharedTerminalWidth": 500,

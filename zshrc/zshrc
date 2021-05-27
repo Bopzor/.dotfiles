@@ -71,11 +71,14 @@ unsetopt complete_aliases       # complete alisases
 
 # Aliases
 source ~/.dotfiles/zshrc/zshrc.aliases
-source ~/.dotfiles/zshrc/zshrc.aliases.archlinux
-#source ~/.dotfiles/zshrc/zshrc.aliases.ubuntu
+#source ~/.dotfiles/zshrc/zshrc.aliases.archlinux
+source ~/.dotfiles/zshrc/zshrc.aliases.ubuntu
 
 # Local
-#source $HOME/.zshrc.local
+source $HOME/.zshrc.local
+
+# Other
+source $HOME/.zshrc.alltricks
 
 # EXPORTS
 export PATH="$PATH:$HOME/.nvm/versions/node/v12.16.3/bin"
@@ -100,7 +103,6 @@ export PATH=$PATH:$HOME/flutter/bin
 export PATH=$PATH:$HOME/flutter
 
 # NVM
-source /usr/share/nvm/init-nvm.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
