@@ -2,6 +2,25 @@
 
 # packages to install
 
+## apt-get
+
+zsh
+i3
+jq
+httpie
+fonts-font-awesome
+terminator
+zsh-syntax-highlighting
+pavucontrol
+polybar
+blueman
+feh
+rofi
+git
+curl
+xclip
+most
+
 ## pacman
 
 firefox
@@ -13,6 +32,7 @@ terminator
 yaourt
 rofi
 feh
+blueman
 nodejs
 pavucontrol
 pulseaudio
