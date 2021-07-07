@@ -4,7 +4,6 @@
   "editor.snippetSuggestions": "bottom",
   "editor.wordWrapColumn": 120,
   "editor.tabCompletion": "on",
-  "editor.fontLigatures": true,
   "editor.rulers": [
     80,
     120
@@ -23,7 +22,6 @@
   "breadcrumbs.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "files.autoSave": "off",
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
@@ -55,6 +53,7 @@
   },
   "editor.fontSize": 11,
   "editor.fontFamily": "'JetBrains Mono', 'Fira mono', 'monospace', monospace, 'Droid Sans Fallback' , 'FontAwesome'",
+  "editor.fontLigatures": true,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -88,7 +87,6 @@
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
-  "prettier.configPath": ".prettierc",
   "liveshare.sharedTerminalHeight": 500,
   "liveshare.sharedTerminalWidth": 500,
   "vsintellicode.python.completionsEnabled": false,
@@ -109,6 +107,7 @@
   "files.trimTrailingWhitespace": true,
   "terminal.integrated.cursorStyle": "line",
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "Bear Theme",
-  "scm.defaultViewMode": "tree"
+  "workbench.colorTheme": "An Old Hope",
+  "scm.defaultViewMode": "tree",
+  "terminal.integrated.fontSize": 12
 }

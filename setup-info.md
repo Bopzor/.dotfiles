@@ -12,7 +12,7 @@ fonts-font-awesome
 terminator
 zsh-syntax-highlighting
 pavucontrol
-polybar
+i3blocks | polybar
 blueman
 feh
 rofi
@@ -59,9 +59,9 @@ setxkbmap -option caps:swapescape
 anjali.clipboard-history
 bierner.color-info
 cardinal90.multi-cursor-case-preserve
-dahong.theme-bear
 dbaeumer.vscode-eslint
 dcasella.i3
+dustinsanders.an-old-hope-theme-vscode
 eamodio.gitlens
 esbenp.prettier-vscode
 jmfirth.vsc-space-block-jumper
