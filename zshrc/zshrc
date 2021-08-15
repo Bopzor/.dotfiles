@@ -7,12 +7,15 @@ export FZF_BASE=~/.fzf
 ZSH_THEME="pmcgee"
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH/custom/plugins/zsh-syntax-highlighting.zsh
 
 ENABLE_CORRECTION="true"
 
 export LC_ALL=en_US.UTF-8
 export PAGER=most
+
+# Plugins
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+plugins=(zsh-syntax-highlighting)
 
 # History
 
@@ -106,3 +109,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # ROFI
 export PATH=$HOME/.config/rofi/bin:$PATH
+
+setxkbmap -option caps:swapescape
