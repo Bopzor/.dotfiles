@@ -10,9 +10,8 @@ jq
 httpie
 fonts-font-awesome
 terminator
-zsh-syntax-highlighting
 pavucontrol
-i3blocks | polybar
+i3blocks
 blueman
 feh
 rofi
@@ -50,25 +49,10 @@ nvm
 spotify
 slack-desktop
 
-# swap escape and capslock ~/.profile
+# swap escape and capslock ~/.zshrc
 
 setxkbmap -option caps:swapescape
 
 # vscode extensions
 
-anjali.clipboard-history
-bierner.color-info
-cardinal90.multi-cursor-case-preserve
-dbaeumer.vscode-eslint
-dcasella.i3
-dustinsanders.an-old-hope-theme-vscode
-eamodio.gitlens
-esbenp.prettier-vscode
-jmfirth.vsc-space-block-jumper
-juanmnl.vscode-theme-1984
-mikestead.dotenv
-ms-vsliveshare.vsliveshare
-pkief.material-icon-theme
-sleistner.vscode-fileutils
-visualstudioexptteam.vscodeintellicode
-ybaumes.highlight-trailing-white-spaces
+run `./vscode/install-extensions.sh` to install them
