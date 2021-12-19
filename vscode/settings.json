@@ -62,28 +62,10 @@
   "keyboard.dispatch": "keyCode",
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "auto-rename-tag.activationOnLanguage": [
-    "html",
-    "xml",
-    "typescript",
-    "javascript",
-    "javascriptreact"
-  ],
   "editor.detectIndentation": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.autoReveal": false,
-  "java.semanticHighlighting.enabled": false,
   "editor.suggest.insertMode": "replace",
-  "trailing-spaces.trimOnSave": true,
-  "trailing-spaces.syntaxIgnore": [
-    "markdown",
-    "md"
-  ],
-  "trailing-spaces.schemeIgnore": [
-    "md",
-    "markdown",
-    "output"
-  ],
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
@@ -93,21 +75,25 @@
   "vsintellicode.sql.completionsEnabled": false,
   "vsintellicode.java.completionsEnabled": false,
   "vsintellicode.features.python.deepLearning": "enabled",
-  "dart.flutterSdkPath": "/home/vio/flutter",
-  "dart.debugExternalLibraries": false,
-  "dart.debugSdkLibraries": false,
-  "autoimport.filesToScan": "**/*.{ts,tsx, js, jsx}",
   "extensions.ignoreRecommendations": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.enabled": false,
-  "npm-intellisense.scanDevDependencies": true,
-  "wallaby.startAutomatically": false,
-  "liveshare.authenticationProvider": "GitHub",
   "files.trimTrailingWhitespace": true,
   "terminal.integrated.cursorStyle": "line",
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "Pop N' Lock Theme by Luxcium ✨ TSA/ASD 🧩",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "scm.defaultViewMode": "tree",
-  "terminal.integrated.fontSize": 12
+  "terminal.integrated.fontSize": 12,
+  "explorer.compactFolders": false,
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "gitlens.codeLens.enabled": true,
+  "workbench.editor.wrapTabs": true,
+  "editor.codeLens": false,
+  "diffEditor.codeLens": true,
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }
