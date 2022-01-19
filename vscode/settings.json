@@ -64,7 +64,7 @@
   "typescript.preferences.quoteStyle": "single",
   "editor.detectIndentation": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "explorer.autoReveal": false,
+  "explorer.autoReveal": true,
   "editor.suggest.insertMode": "replace",
   "[markdown]": {
     "files.trimTrailingWhitespace": false
@@ -95,5 +95,7 @@
   "diffEditor.codeLens": true,
   "[dockercompose]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  }
+  },
+  "liveshare.presence": true,
+  "typescript.preferences.jsxAttributeCompletionStyle": "none",
 }
