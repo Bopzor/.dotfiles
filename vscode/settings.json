@@ -64,7 +64,7 @@
   "typescript.preferences.quoteStyle": "single",
   "editor.detectIndentation": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "explorer.autoReveal": true,
+  "explorer.autoReveal": false,
   "editor.suggest.insertMode": "replace",
   "[markdown]": {
     "files.trimTrailingWhitespace": false
@@ -81,7 +81,7 @@
   "files.trimTrailingWhitespace": true,
   "terminal.integrated.cursorStyle": "line",
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Bearded Theme Altica",
   "scm.defaultViewMode": "tree",
   "terminal.integrated.fontSize": 12,
   "explorer.compactFolders": false,
@@ -98,4 +98,18 @@
   },
   "liveshare.presence": true,
   "typescript.preferences.jsxAttributeCompletionStyle": "none",
+  "html.autoClosingTags": false,
+  "json.schemas": [
+    {
+      "name": "vscode-expo-manifest",
+      "url": "file:///home/vio/.config/Code/User/globalStorage/bycedric.vscode-expo/manifest-44.0.0.json",
+      "fileMatch": [
+        "app.json",
+        "app.config.json"
+      ]
+    }
+  ],
+  "typescript.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "workbench.activityBar.visible": false
 }
