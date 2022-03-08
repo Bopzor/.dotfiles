@@ -81,7 +81,7 @@
   "files.trimTrailingWhitespace": true,
   "terminal.integrated.cursorStyle": "line",
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "Bearded Theme Altica",
+  "workbench.colorTheme": "Coral Reef Bright",
   "scm.defaultViewMode": "tree",
   "terminal.integrated.fontSize": 12,
   "explorer.compactFolders": false,
@@ -111,5 +111,5 @@
   ],
   "typescript.autoClosingTags": false,
   "javascript.autoClosingTags": false,
-  "workbench.activityBar.visible": false
+  "cSpell.language": "en, fr"
 }
