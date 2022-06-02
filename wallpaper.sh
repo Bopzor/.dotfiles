@@ -5,4 +5,4 @@
 
 wp="$WALLPAPERS_DIR/$(ls "$WALLPAPERS_DIR" | sort -R | tail -1)"
 
-feh --bg-scale "$wp"
+cp "$wp" ~/.cache/wallpaper

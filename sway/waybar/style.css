@@ -1,0 +1,65 @@
+* {
+  border: none;
+  font-family: Font Awesome, Roboto, Arial, sans-serif;
+  font-size: 12px;
+  color: #cccccc;
+}
+
+window#waybar {
+  background: #2b2c2b;
+}
+
+/*-----modules indv----*/
+#workspaces button {
+  padding: 1px 5px;
+  background-color: #1d1d1d;
+  border-radius: 0;
+  border-bottom: 2px solid #1d1d1d
+}
+#workspaces button:hover {
+  box-shadow: inherit;
+  background: #1d1d1d;
+  border-bottom: 1px solid #ed8712;
+}
+
+#workspaces button.focused {
+  background-color: #1d1d1d;
+  border-bottom: 2px solid #ed8712;
+}
+
+#workspaces button.urgent {
+  background-color: #1d1d1d;
+  border-bottom: 2px solid #bd2c40;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#custom-media,
+#backlight {
+  padding: 0 8px;
+  font-weight: 700;
+}
+
+/*-----Indicators----*/
+#pulseaudio.muted {
+  color: #615d5d;
+}
+#battery.charging {
+  color: #2dcc36;
+}
+#battery.warning:not(.charging) {
+  color: #e6e600;
+}
+#battery.critical:not(.charging) {
+  color: #cc3436;
+}
+
+/*-----Colors----*/
+/*
+*rgba(0,85,102,1),#005566 --> Indigo(dye)
+*rgba(0,43,51,1),#002B33 --> Dark Green
+*rgba(0,153,153,1),#009999 --> Persian Green
+*
+*/

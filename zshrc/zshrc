@@ -14,8 +14,7 @@ export LC_ALL=en_US.UTF-8
 export PAGER=most
 
 # Plugins
-source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
-plugins=(zsh-syntax-highlighting)
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting.plugin.zsh
 
 # History
 
@@ -83,6 +82,7 @@ source $HOME/.zshrc.local
 # EXPORTS
 export PATH="$PATH:$HOME/.nvm/versions/node/v12.16.3/bin"
 export PATH="$PATH:$HOME/.bin"
+export PATH=$HOME/.local/bin:$PATH
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -112,5 +112,12 @@ export NVM_DIR="$HOME/.nvm"
 # ROFI
 export PATH=$HOME/.config/rofi/bin:$PATH
 
+#Fly.io
+export FLYCTL_INSTALL="/home/vio/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
 # opam configuration for OCAML
 test -r /home/vio/.opam/opam-init/init.zsh && . /home/vio/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# ssh-agent
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
