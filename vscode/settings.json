@@ -20,7 +20,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "breadcrumbs.enabled": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -29,13 +29,13 @@
   },
   "window.restoreWindows": "folders",
   "window.openFoldersInNewWindow": "on",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#282e2f",
+  },
   "prettier.singleQuote": true,
   "prettier.printWidth": 100,
   "prettier.trailingComma": "es5",
   "prettier.jsxSingleQuote": false,
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#282e2f",
-  },
   "prettier.arrowParens": "always",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -67,21 +67,19 @@
   "explorer.autoReveal": false,
   "editor.suggest.insertMode": "replace",
   "[markdown]": {
-    "files.trimTrailingWhitespace": false
+    "files.trimTrailingWhitespace": false,
+    "editor.formatOnSave": false
   },
   "liveshare.sharedTerminalHeight": 500,
   "liveshare.sharedTerminalWidth": 500,
   "vsintellicode.python.completionsEnabled": false,
   "vsintellicode.sql.completionsEnabled": false,
   "vsintellicode.java.completionsEnabled": false,
-  "vsintellicode.features.python.deepLearning": "enabled",
   "extensions.ignoreRecommendations": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
   "files.trimTrailingWhitespace": true,
   "terminal.integrated.cursorStyle": "line",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "Coral Reef Bright",
   "scm.defaultViewMode": "tree",
   "terminal.integrated.fontSize": 12,
   "explorer.compactFolders": false,
@@ -89,14 +87,12 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "gitlens.codeLens.enabled": true,
+  "gitlens.codeLens.enabled": false,
   "workbench.editor.wrapTabs": true,
-  "editor.codeLens": false,
   "diffEditor.codeLens": true,
   "[dockercompose]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "liveshare.presence": true,
   "typescript.preferences.jsxAttributeCompletionStyle": "none",
   "html.autoClosingTags": false,
   "json.schemas": [
@@ -109,7 +105,64 @@
       ]
     }
   ],
-  "typescript.autoClosingTags": false,
-  "javascript.autoClosingTags": false,
-  "cSpell.language": "en, fr"
+  "cSpell.language": "en, fr",
+  "eslint.lintTask.options": "",
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className"
+  ],
+  "settingsSync.keybindingsPerPlatform": false,
+  "search.followSymlinks": false,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "files.associations": {
+    "*.sql": "sql",
+    "*.sway": "i3"
+  },
+  "cSpell.userWords": [
+    "clsx",
+    "nestjs",
+    "reduxjs",
+    "tailwindcss",
+  ],
+  "git.openRepositoryInParentFolders": "always",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "cweijan.vscode-postgresql-client2"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "workbench.panel.defaultLocation": "right",
+  "debug.onTaskErrors": "debugAnyway",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "terminal.integrated.env.linux": {},
+  "workbench.editor.revealIfOpen": false,
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.lightbulb.enabled": "off",
+  "workbench.activityBar.location": "hidden",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.linkedEditing": true,
+  "javascript.preferences.renameMatchingJsxTags": true,
+  "typescript.preferences.renameMatchingJsxTags": true,
+  "typescript.autoClosingTags": true,
+  "eslint.runtime": "",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "workbench.editor.enablePreview": false,
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "CityPop"
 }

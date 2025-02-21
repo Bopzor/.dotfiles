@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-echo ""
-
-case "$BLOCK_BUTTON" in
-  1) gnome-calendar ;;
-esac
