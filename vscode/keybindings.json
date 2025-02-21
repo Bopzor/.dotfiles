@@ -117,6 +117,11 @@
     "when": "editorTextFocus"
   },
   {
+    "key": "ctrl+shift+s",
+    "command": "editor.action.copyLinesAction",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "ctrl+alt+s",
     "command": "editor.action.deleteLines",
     "when": "editorTextFocus"
@@ -198,56 +203,53 @@
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
+  // select between quotes
   {
-    "key": "alt+q '",
-    "command": "extension.selectSingleQuote"
-  },
-  {
-    "key": "alt+q shift+'",
-    "command": "extension.selectDoubleQuote"
-  },
-  {
-    "key": "alt+q z",
-    "command": "extension.selectEitherQuote"
-  },
-  {
-    "key": "alt+q q",
-    "command": "extension.switchQuotes"
-  },
-  {
-    "key": "alt+q `",
+    "key": "alt+`",
     "command": "extension.selectBackTick"
   },
   {
-    "key": "alt+q (",
+    "key": "alt+'",
+    "command": "extension.selectEitherQuote"
+  },
+  {
+    "key": "alt+shift+'",
+    "command": "extension.switchQuotes"
+  },
+  // select between parenthesis
+  {
+    "key": "alt+shift+9",
     "command": "extension.selectParenthesis"
   },
   {
-    "key": "alt+q )",
+    "key": "alt+shift+0",
     "command": "extension.selectParenthesisOuter"
   },
+  // select between square brackets
   {
-    "key": "alt+q [",
+    "key": "alt+[",
     "command": "extension.selectSquareBrackets"
   },
   {
-    "key": "alt+q ]",
+    "key": "alt+]",
     "command": "extension.selectSquareBracketsOuter"
   },
+  // select between curly brackets
   {
-    "key": "alt+q shift+[",
+    "key": "alt+shift+[",
     "command": "extension.selectCurlyBrackets"
   },
   {
-    "key": "alt+q shift+]",
+    "key": "alt+shift+]",
     "command": "extension.selectCurlyBracketsOuter"
   },
+  // select between angle brackets
   {
-    "key": "alt+q <",
+    "key": "alt+shift+,",
     "command": "extension.selectAngleBrackets"
   },
   {
-    "key": "alt+q .",
+    "key": "alt+shift+.",
     "command": "extension.selectInTag"
   },
   // actions
@@ -361,11 +363,6 @@
   // ----
   // command palette
   {
-    "key": "alt+,",
-    "command": "workbench.action.showCommands"
-  },
-  // settings
-  {
     "key": "ctrl+alt+p",
     "command": "workbench.action.openSettings"
   },
@@ -474,10 +471,6 @@
     "command": "workbench.view.extensions"
   },
   {
-    "key": "alt+5",
-    "command": "workbench.view.debug"
-  },
-  {
     "key": "alt+t",
     "command": "workbench.action.toggleActivityBarVisibility"
   },
@@ -581,5 +574,111 @@
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm",
     "when": "workbench.scm.active"
+  },
+  {
+    "key": "alt+.",
+    "command": "-gitlens.key.alt+.",
+    "when": "gitlens:key:."
+  },
+  {
+    "key": "alt+.",
+    "command": "-gitlens.diffWithNextInDiffRight",
+    "when": "editorTextFocus && isInDiffRightEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
+  },
+  {
+    "key": "alt+.",
+    "command": "-gitlens.diffWithNextInDiffLeft",
+    "when": "editorTextFocus && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
+  },
+  {
+    "key": "alt+.",
+    "command": "-gitlens.diffWithNext",
+    "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
+  },
+  {
+    "key": "alt+.",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "alt+,",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "alt+,",
+    "command": "-gitlens.key.alt+,",
+    "when": "gitlens:key:,"
+  },
+  {
+    "key": "shift+alt+,",
+    "command": "-gitlens.diffLineWithPrevious",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+  },
+  {
+    "key": "alt+,",
+    "command": "-gitlens.diffWithPreviousInDiffRight",
+    "when": "editorTextFocus && isInDiffRightEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+  },
+  {
+    "key": "alt+,",
+    "command": "-gitlens.diffWithPreviousInDiffLeft",
+    "when": "editorTextFocus && isInDiffEditor && !isInDiffRightEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+  },
+  {
+    "key": "alt+,",
+    "command": "-gitlens.diffWithPrevious",
+    "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+  },
+  {
+    "key": "alt+6",
+    "command": "workbench.view.extension.github-cweijan-mysql"
+  },
+  {
+    "key": "alt+5",
+    "command": "workbench.view.extension.github-pull-request"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "workbench.action.terminal.copySelection",
+    "when": "terminalFocus && terminalTextSelected"
+  },
+  {
+    "key": "shift+c shift+enter",
+    "command": "workbench.action.chat.applyInEditor",
+    "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-workbench.action.chat.applyInEditor",
+    "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+  },
+  {
+    "key": "shift+c shift+enter",
+    "command": "workbench.action.chat.insertCodeBlock",
+    "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-workbench.action.chat.insertCodeBlock",
+    "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "workbench.action.chat.runInTerminal",
+    "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat"
+  },
+  {
+    "key": "ctrl+alt+enter",
+    "command": "-workbench.action.chat.runInTerminal",
+    "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat"
+  },
+  {
+    "key": "shift+enter",
+    "command": "github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
   }
 ]

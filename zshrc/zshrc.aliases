@@ -30,4 +30,18 @@ alias home='xrandr --output eDP-1 --mode 3840x2400 --primary --scale 0.5x0.5 --f
 
 alias g="git"
 alias y="yarn"
+alias p="pnpm"
 alias dcp='docker-compose'
+
+alias untar='tar -zxvf '
+
+port2pid() {
+  if [ -z "$1" ]; then
+    echo "usage: port2pid <port>"
+    return 1
+  fi
+
+  ss -lptnH "sport = :$1" | awk '{ print $6 }' | grep -o 'pid=[0-9]\+' | sed 's/^pid=//'
+}
+
+#alias docker='podman'

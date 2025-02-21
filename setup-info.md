@@ -2,24 +2,6 @@
 
 # packages to install
 
-## apt-get
-
-- zsh
-- i3
-- jq
-- httpie
-- fonts-font-awesome
-- terminator
-- pavucontrol
-- i3blocks
-- blueman
-- feh
-- rofi
-- git
-- curl
-- xclip
-- most
-
 ## pacman
 
 - firefox
@@ -27,10 +9,9 @@
 - zsh
 - oh-my-zsh
 - zsh-syntax-highlighting
-- terminator
-- yaourt
-- rofi
-- feh
+- alacritty
+- sway
+- wofi | ulauncher
 - blueman
 - nodejs
 - pavucontrol

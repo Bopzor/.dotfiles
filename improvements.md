@@ -1,0 +1,5 @@
+- [] upload / download modal is too big
+- [] cleanup .dotfiles
+- [] firefox isn't open at workspace 2
+- [] use sway without garuda (scale eDP1 by 2)
+- [] try nwg-panel: https://nwg-piotr.github.io/nwg-shell/nwg-panel
