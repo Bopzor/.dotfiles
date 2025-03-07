@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 extensions=(
   "aaron-bond.better-comments"
@@ -30,3 +30,5 @@ for extension in "${extensions[@]}"
 do
   code --install-extension "$extension"
 done
+
+

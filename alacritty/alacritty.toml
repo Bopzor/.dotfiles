@@ -1,3 +1,4 @@
+[general]
 live_config_reload = true
 
 [colors.bright]
@@ -62,8 +63,8 @@ action = "SpawnNewInstance"
 key = "Return"
 mods = "Control|Shift"
 
-[shell]
-program = "/bin/zsh"
+[terminal]
+shell = "/bin/zsh"
 
 [window]
 dynamic_padding = true

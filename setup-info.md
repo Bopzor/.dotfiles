@@ -4,6 +4,8 @@
 
 ## pacman
 
+- networkmanager
+- yay
 - firefox
 - chromium
 - zsh
@@ -11,11 +13,12 @@
 - zsh-syntax-highlighting
 - alacritty
 - sway
-- wofi | ulauncher
+- bluetooth
 - blueman
+- code
 - nodejs
 - pavucontrol
-- pulseaudio
+- pipewire
 - adobe-source-code-pro-fonts
 - ttf-jetbrains-mono
 - otf-font-awesome
@@ -23,17 +26,21 @@
 - httpie
 - jq
 
-## yaourt
+## yay
 
-- visual-studio-code-bin
+- ulauncher
 - nvm
 - spotify
 - slack-desktop
 
-# swap escape and capslock ~/.zshrc
-
-setxkbmap -option caps:swapescape
-
 # vscode extensions
 
 run `./vscode/install-extensions.sh` to install them
+
+# firefox
+
+- login
+- create ~/.mozilla/firefox/chrome/userChrome.css
+- in firefox about:config:
+    - set toolkit.legacyUserProfileCustomizations.stylesheets to true 
+    - set privacy.webrtc.hideGlobalIndicator to true

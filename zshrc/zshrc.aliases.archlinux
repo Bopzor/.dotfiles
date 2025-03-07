@@ -4,6 +4,3 @@ alias paci="sudo pacman -S"
 alias pacs="pacman -Ss"
 alias pacu="sudo pacman -Syu"
 alias pacrm="sudo pacman -R"
-
-alias yaourti="yaourt -S --noconfirm"
-alias yaourts="yaourt -Ss"

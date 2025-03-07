@@ -16,7 +16,7 @@
   ],
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
-  "terminal.external.linuxExec": "terminator",
+  "terminal.external.linuxExec": "alacritty",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "breadcrumbs.enabled": true,
@@ -52,7 +52,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "editor.fontSize": 11,
-  "editor.fontFamily": "'JetBrains Mono', 'Fira mono', 'monospace', monospace, 'Droid Sans Fallback' , 'FontAwesome'",
+  "editor.fontFamily": "'JetBrains Mono', 'Fira mono', 'monospace', 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'Font Awesome 6 Free Solid'",
   "editor.fontLigatures": true,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -164,5 +164,5 @@
   },
   "workbench.editor.enablePreview": false,
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "CityPop"
+  "workbench.colorTheme": "Tomorrow Night Blue"
 }

@@ -1,144 +1,173 @@
-{
-  "layer": "top", // Waybar at top layer
-  "position": "top", // Waybar position (top|bottom|left|right)
-  // Choose the order of the modules idle_inhibitor
-  "modules-left": [
-    "sway/workspaces",
-    "disk",
-  ],
-  "modules-center": [
-    "clock"
-  ],
-  "modules-right": [
-    "custom/media",
-    "pulseaudio",
-    "custom/pacman",
-    "network",
-    "backlight",
-    "battery",
-    "idle_inhibitor",
-    "tray",
-    "custom/power"
-  ],
-  // Modules configuration
-  "sway/workspaces": {
-    "disable-scroll": true,
-    "format": "{icon}",
-    "format-icons": {
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "8",
-      "9": "9",
-      "10": "10",
-    }
-  },
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": "",
-      "deactivated": ""
-    }
-  },
-  "tray": {
-    "icon-size": 14,
-    "spacing": 5
-  },
-  "clock": {
-    "interval": 1,
-    "format": "{:%d/%m/%Y %T}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%d/%m/%Y %T}"
-  },
-  "backlight": {
-    "format": "{icon} {percent}%",
-    "format-icons": [
-      "",
-      ""
+[
+  {
+    "id": "top",
+    "layer": "top",
+    "position": "top",
+    "modules-left": [
+      "sway/workspaces",
     ],
-    "on-scroll-down": "brightnessctl -c backlight set 1%",
-    "on-scroll-up": "brightnessctl -c backlight set +1%"
-  },
-  "battery": {
-    "states": {
-      "warning": 30,
-      "critical": 15
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "custom/media",
+      "pulseaudio",
+      "backlight",
+      "battery",
+      "tray",
+    ],
+    // Modules configuration
+    "sway/workspaces": {
+      "disable-scroll": true,
+      "format": "{icon}",
+      "format-icons": {
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10",
+      }
     },
-    "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
-  },
-  "network": {
-    "format": "{ipaddr}"
-  },
-  "pulseaudio": {
-    "tooltip": false,
-    "format": "{icon} {volume}%",
-    "format-muted": " {volume}%",
-    "format-bluetooth": "{volume}% {icon}  {format_source}",
-    "format-icons": {
-      "headphones": [
-        " ",
-        " ",
-        " "
+    "tray": {
+      "icon-size": 14,
+      "spacing": 5,
+    },
+    "clock": {
+      "interval": 1,
+      "format": "{:%d/%m/%Y %T}",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format-alt": "{:%d/%m/%Y %T}",
+      "locale": "fr_FR.UTF-8"
+    },
+    "backlight": {
+      "format": "{icon} {percent}%",
+      "format-icons": [
+        "",
+        ""
       ],
-      "handsfree": "",
-      "headset": [
-        " ",
-        " ",
-        " "
-      ],
-      "default": [
-        "",
-        "",
-        ""
+      "on-scroll-down": "brightnessctl -c backlight set 1%",
+      "on-scroll-up": "brightnessctl -c backlight set +1%",
+      "on-click": "brightnessctl -c backlight set 100%",
+      "on-click-right": "brightnessctl -c backlight set 10%"
+    },
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon} {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-alt": "{icon} {time}",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     },
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "on-click-right": "/usr/bin/pavucontrol",
-    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
-    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%"
+    "network": {
+      "format": "{ipaddr}",
+      "family": "ipv4"
+    },
+    "pulseaudio": {
+      "tooltip": false,
+      "format": "{icon} {volume}%",
+      "format-muted": " {volume}%",
+      "format-bluetooth": "{volume}% {icon}  {format_source}",
+      "format-icons": {
+        "headphones": [
+          " ",
+          " ",
+          " "
+        ],
+        "handsfree": "",
+        "headset": [
+          " ",
+          " ",
+          " "
+        ],
+        "default": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-click-right": "pavucontrol",
+      "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%",
+      "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%"
+    },
+    "custom/media": {
+      "format": "{text} {icon}",
+      "format-icons": {
+        "spotify": "",
+        "default": "🎜"
+      },
+      "tooltip-format": "{text}",
+      "escape": true,
+      "return-type": "json",
+      "max-length": 40,
+      "on-click": "playerctl -p spotify play-pause",
+      "on-click-right": "killall spotify",
+      "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+      "on-scroll-up": "playerctl -p spotify next",
+      "on-scroll-down": "playerctl -p spotify previous",
+      "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
+      "exec-if": "pgrep spotify"
+    },
+    "disk": {
+      "interval": 30,
+      "format": "/: {used} ({percentage_used}%)",
+      "path": "/",
+      "tooltip-format": "{used} used out of {total} ({percentage_free}% remaining)"
+    },
   },
-  "custom/media": {
-    "format": "{icon} {} ",
-    "escape": true,
-    "return-type": "json",
-    "max-length": 40,
-    "on-click": "playerctl -p spotify play-pause",
-    "on-click-right": "killall spotify",
-    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
-    "on-scroll-up": "playerctl -p spotify next",
-    "on-scroll-down": "playerctl -p spotify previous",
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
-    "exec-if": "pgrep spotify"
+  {
+    "id": "bottom",
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": [
+      "network",
+    ],
+    "modules-right": [
+      "custom/pacman",
+      "disk",
+      "cpu",
+      "memory",
+      "temperature"
+    ],
+    "network": {
+      "format": "{ipaddr}",
+      "family": "ipv4"
+    },
+    "disk": {
+      "interval": 30,
+      "format": "🖴 /: {used} ({percentage_used}%)",
+      "path": "/",
+      "tooltip-format": "{used} used out of {total} ({percentage_free}% remaining)",
+    },
+    "cpu": {
+      "format": " {}%"
+    },
+    "memory": {
+      "format": " {}%",
+      "tooltip-format": "{used:0.1f}G/{total:0.1f}G"
+    },
+    "temperature": {
+      "format": " {temperatureC}°C"
+    },
+    "custom/pacman": {
+      "format": " {}",
+      "interval": 7200, // every two hours
+      "exec": "checkupdates | wc -l", // # of updates
+      "exec-if": "exit 0", // always run; consider advanced run conditions
+      "on-click": "alacritty -e sudo pacman -Syu ; pkill -SIGRTMIN+8 waybar", // update system
+      "signal": 8
+    },
   },
-  "custom/pacman": {
-    "format": " {}",
-    "interval": 7200, // every two hours
-    "exec": "checkupdates | wc -l", // # of updates
-    "exec-if": "exit 0", // always run; consider advanced run conditions
-    "on-click": "alacritty -e sudo pacman -Syu ; pkill -SIGRTMIN+8 waybar", // update system
-    "signal": 8
-  },
-  "custom/power": {
-    "format": "⏻",
-    "on-click": "nwgbar",
-    "tooltip": false,
-  },
-  "disk": {
-    "interval": 30,
-    "format": "/: {used} ({percentage_used}%)",
-    "path": "/",
-    "tooltip-format": "{used} used out of {total} ({percentage_free}% remaining)"
-  },
-}
+]
