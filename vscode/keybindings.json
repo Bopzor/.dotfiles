@@ -41,7 +41,7 @@
     "command": "cursorEndSelect",
     "when": "textInputFocus"
   },
-  // file start / end
+    // file start / end
   {
     "key": "home",
     "command": "cursorTop",

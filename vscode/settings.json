@@ -4,10 +4,7 @@
   "editor.snippetSuggestions": "bottom",
   "editor.wordWrapColumn": 120,
   "editor.tabCompletion": "on",
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.rulers": [80, 120],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -30,33 +27,34 @@
   "window.restoreWindows": "folders",
   "window.openFoldersInNewWindow": "on",
   "workbench.colorCustomizations": {
-    "statusBar.background": "#282e2f",
+    "statusBar.background": "#282e2f"
   },
-  "prettier.singleQuote": true,
-  "prettier.printWidth": 100,
-  "prettier.trailingComma": "es5",
-  "prettier.jsxSingleQuote": false,
-  "prettier.arrowParens": "always",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "[javascript]": {
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[typescriptreact]": {
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.fontSize": 11,
   "editor.fontFamily": "'JetBrains Mono', 'Fira mono', 'monospace', 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'Font Awesome 6 Free Solid'",
   "editor.fontLigatures": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
   "keyboard.dispatch": "keyCode",
@@ -84,9 +82,6 @@
   "terminal.integrated.fontSize": 12,
   "explorer.compactFolders": false,
   "editor.formatOnSave": true,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
   "gitlens.codeLens.enabled": false,
   "workbench.editor.wrapTabs": true,
   "diffEditor.codeLens": true,
@@ -99,18 +94,12 @@
     {
       "name": "vscode-expo-manifest",
       "url": "file:///home/vio/.config/Code/User/globalStorage/bycedric.vscode-expo/manifest-44.0.0.json",
-      "fileMatch": [
-        "app.json",
-        "app.config.json"
-      ]
+      "fileMatch": ["app.json", "app.config.json"]
     }
   ],
   "cSpell.language": "en, fr",
   "eslint.lintTask.options": "",
-  "tailwindCSS.classAttributes": [
-    "class",
-    "className"
-  ],
+  "tailwindCSS.classAttributes": ["class", "className"],
   "settingsSync.keybindingsPerPlatform": false,
   "search.followSymlinks": false,
   "editor.minimap.enabled": false,
@@ -119,12 +108,7 @@
     "*.sql": "sql",
     "*.sway": "i3"
   },
-  "cSpell.userWords": [
-    "clsx",
-    "nestjs",
-    "reduxjs",
-    "tailwindcss",
-  ],
+  "cSpell.userWords": ["clsx", "nestjs", "reduxjs", "tailwindcss"],
   "git.openRepositoryInParentFolders": "always",
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -164,5 +148,6 @@
   },
   "workbench.editor.enablePreview": false,
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "Tomorrow Night Blue"
+  "workbench.colorTheme": "Atom One Dark",
+  "explorer.confirmDragAndDrop": false
 }

@@ -14,7 +14,8 @@ bindswitch --reload --locked lid:on output eDP-1 disable
 bindswitch --reload --locked lid:off output eDP-1 enable
 
 set $display1 eDP-1
-set $display2 DP-2
+# set $display2 DP-2
+set $display2 DP-3
 set $display3 HDMI-A-1
 
 set $w1 1
@@ -29,6 +30,7 @@ set $w9 9
 set $w0 10
 
 output $display1 pos 0 0
+output $display2 pos 1920 0
 
 workspace $w1 output $display1
 workspace $w2 output $display1
@@ -39,7 +41,7 @@ workspace $w8 output $display1
 assign [app_id="firefox"] $w2
 assign [class="^[Cc]hromium$"] $w4
 assign [class="^[Gg]oogle [Cc]hrome$"] $w4
-assign [app_id="[Aa]lacritty"] $w1
+assign [title="^terminal$"] $w1
 assign [app_id="^[Cc]ode"] $w3
 assign [app_id="^[Ss]lack$"] $w8
 assign [class="^[Dd]iscord$"] $w8

@@ -1,7 +1,11 @@
 exec nm-applet --indicator
 exec ulauncher --hide-window --no-window-shadow
 
-exec alacritty
+# start ssh-agent service
+exec systemctl --user import-environment DISPLAY SSH_AUTH_SOCK
+exec systemctl --user start ssh-agent.service
+
+exec alacritty -t terminal
 exec code
 exec slack --disable-gpu-compositing --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WebRTCPipeWireCapturer --enable-features=WaylandWindowDecorations --disable-features=WaylandFractionalScaleV1 -s %U
 exec firefox

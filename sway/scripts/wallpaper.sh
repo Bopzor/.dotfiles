@@ -1,0 +1,1 @@
+/home/bopzor/.dotfiles/wallpaper.sh

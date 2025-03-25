@@ -1,5 +1,13 @@
-- [] upload / download modal is too big
-- [] cleanup .dotfiles
-- [] firefox isn't open at workspace 2
-- [] use sway without garuda (scale eDP1 by 2)
-- [] try nwg-panel: https://nwg-piotr.github.io/nwg-shell/nwg-panel
+- [x] upload / download modal is too big
+- [x] cleanup .dotfiles
+- [x] firefox isn't open at workspace 2
+- [x] use sway without garuda (scale eDP1 by 2)
+- [x] try nwg-panel: https://nwg-piotr.github.io/nwg-shell/nwg-panel
+- [x] ssh agent
+- [x] check IDE formatting default
+- [x] trim comma on format
+- [] keybinding: add missing imports
+- [] keybinding: cursor undo
+- [] keybinding: go to next error
+- [] keybinding: go to matching parenthesis / bracket
+- [] keybinding: add selected line to staged change

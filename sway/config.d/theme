@@ -1,6 +1,10 @@
 # Apply gtk theming
 exec_always ~/.config/sway/scripts/import-gsettings
 
+# Set wallpaper:
+exec ~/.config/sway/scripts/wallpaper.sh
+output "*" background "~/.cache/wallpaper" fill
+
 # hide title bar
 default_border pixel 1
 titlebar_padding 4 2
