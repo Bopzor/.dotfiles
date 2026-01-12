@@ -3,18 +3,14 @@
     "id": "top",
     "layer": "top",
     "position": "top",
-    "modules-left": [
-      "sway/workspaces",
-    ],
-    "modules-center": [
-      "clock"
-    ],
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["clock"],
     "modules-right": [
       "custom/media",
       "pulseaudio",
       "backlight",
       "battery",
-      "tray",
+      "tray"
     ],
     // Modules configuration
     "sway/workspaces": {
@@ -28,12 +24,12 @@
         "7": "7",
         "8": "8",
         "9": "9",
-        "10": "10",
+        "10": "10"
       }
     },
     "tray": {
       "icon-size": 14,
-      "spacing": 5,
+      "spacing": 5
     },
     "clock": {
       "interval": 1,
@@ -44,10 +40,7 @@
     },
     "backlight": {
       "format": "{icon} {percent}%",
-      "format-icons": [
-        "",
-        ""
-      ],
+      "format-icons": ["", ""],
       "on-scroll-down": "brightnessctl -c backlight set 1%",
       "on-scroll-up": "brightnessctl -c backlight set +1%",
       "on-click": "brightnessctl -c backlight set 100%",
@@ -62,13 +55,7 @@
       "format-charging": " {capacity}%",
       "format-plugged": " {capacity}%",
       "format-alt": "{icon} {time}",
-      "format-icons": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "format-icons": ["", "", "", "", ""]
     },
     "network": {
       "format": "{ipaddr}",
@@ -80,22 +67,10 @@
       "format-muted": " {volume}%",
       "format-bluetooth": "{volume}% {icon}  {format_source}",
       "format-icons": {
-        "headphones": [
-          " ",
-          " ",
-          " "
-        ],
+        "headphones": [" ", " ", " "],
         "handsfree": "",
-        "headset": [
-          " ",
-          " ",
-          " "
-        ],
-        "default": [
-          "",
-          "",
-          ""
-        ]
+        "headset": [" ", " ", " "],
+        "default": ["", "", ""]
       },
       "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
       "on-click-right": "pavucontrol",
@@ -111,12 +86,12 @@
       "tooltip-format": "{text}",
       "escape": true,
       "return-type": "json",
-      "max-length": 40,
-      "on-click": "playerctl -p spotify play-pause",
-      "on-click-right": "killall spotify",
+      "max-length": 20,
+      "on-click": "playerctl -p $(playerctl -l | grep 'tidal\\|spotify') play-pause",
+      "on-click-right": "killall $(playerctl -l | grep 'tidal\\|spotify')",
       "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
-      "on-scroll-up": "playerctl -p spotify next",
-      "on-scroll-down": "playerctl -p spotify previous",
+      "on-scroll-down": "playerctl -p $(playerctl -l | grep 'tidal\\|spotify') next",
+      "on-scroll-up": "playerctl -p $(playerctl -l | grep 'tidal\\|spotify') previous",
       "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
       "exec-if": "pgrep spotify"
     },
@@ -125,22 +100,14 @@
       "format": "/: {used} ({percentage_used}%)",
       "path": "/",
       "tooltip-format": "{used} used out of {total} ({percentage_free}% remaining)"
-    },
+    }
   },
   {
     "id": "bottom",
     "layer": "top",
     "position": "bottom",
-    "modules-left": [
-      "network",
-    ],
-    "modules-right": [
-      "custom/pacman",
-      "disk",
-      "cpu",
-      "memory",
-      "temperature"
-    ],
+    "modules-left": ["network", "custom/tablet"],
+    "modules-right": ["custom/pacman", "disk", "cpu", "memory", "temperature"],
     "network": {
       "format": "{ipaddr}",
       "family": "ipv4"
@@ -149,7 +116,7 @@
       "interval": 30,
       "format": "🖴 /: {used} ({percentage_used}%)",
       "path": "/",
-      "tooltip-format": "{used} used out of {total} ({percentage_free}% remaining)",
+      "tooltip-format": "{used} used out of {total} ({percentage_free}% remaining)"
     },
     "cpu": {
       "format": " {}%"
@@ -169,5 +136,12 @@
       "on-click": "alacritty -e sudo pacman -Syu ; pkill -SIGRTMIN+8 waybar", // update system
       "signal": 8
     },
-  },
+    "custom/tablet": {
+      "return-type": "json",
+      "exec": "/usr/local/bin/tablet-status.sh",
+      "interval": 2,
+      "on-click": "/usr/local/bin/tablet-toggle.sh",
+      "tooltip": true
+    }
+  }
 ]

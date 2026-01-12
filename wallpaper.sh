@@ -5,4 +5,4 @@
 
 wp="$WALLPAPERS_DIR/$(ls "$WALLPAPERS_DIR" | sort -R | tail -1)"
 
-cp "$wp" ~/.cache/wallpaper
+sway output '*' bg "$wp" fill

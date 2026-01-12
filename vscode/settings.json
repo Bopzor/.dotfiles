@@ -17,7 +17,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
   "breadcrumbs.enabled": true,
-  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -52,8 +52,8 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontSize": 11,
-  "editor.fontFamily": "'JetBrains Mono', 'Fira mono', 'monospace', 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'Font Awesome 6 Free Solid'",
+  "editor.fontSize": 12,
+  "editor.fontFamily": "'JetBrains Mono', 'Fira mono', 'monospace', 'Font Awesome 7 Brands', 'Font Awesome 7 Free', 'Font Awesome 7 Free Solid'",
   "editor.fontLigatures": true,
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
@@ -146,8 +146,22 @@
     "markdown": false,
     "scminput": false
   },
-  "workbench.editor.enablePreview": false,
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "onWindowChange",
   "workbench.colorTheme": "Atom One Dark",
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editorAssociations": {
+    "*.svg": "default",
+    "git-rebase-todo": "gitlens.rebase"
+  },
+  "telemetry.telemetryLevel": "off",
+  "continue.telemetryEnabled": false,
+  "gitlens.telemetry.enabled": false,
+  "yaml.schemas": {
+    "file:///home/bopzor/.vscode/extensions/continue.continue-1.2.10-linux-x64/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ]
+  },
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "javascript.preferences.importModuleSpecifier": "non-relative"
 }
